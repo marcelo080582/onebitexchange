@@ -1,24 +1,23 @@
-# README
+Aplicativo que converte o valor de uma moeda para outra qualquer.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 5.2
 
-Things you may want to cover:
+ruby 2.5.1
 
-* Ruby version
+Clone o projeto para sua máquina
 
-* System dependencies
+git clone git@github.com:marcelo080582/exchange.git
 
-* Configuration
+Acesse a pasta do projeto
+cd exchange
 
-* Database creation
+Rode:
+docker-compose build
 
-* Database initialization
+Crie o banco de dados e rode as migrations.
+docker-compose run --rm app bundle exec rails db:create db:migrate
 
-* How to run the test suite
+Suba o servidor
+docker-compose up
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Acesse no browser o endereço http://localhost:3000/
